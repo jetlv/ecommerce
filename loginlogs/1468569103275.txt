@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>User login &mdash; Ecommerce University</title>
+
+    <link rel="shortcut icon" type="image/png" href="//cdn.shopify.com/shopify-marketing_assets/static/shopify-favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="d8rY+wGJtUQF53Fp/cctV3fptnmq1sb4jkyn8kaKEWDfOWagubkWVn/5pXEkfyywJQqdFdEBv1psCfGaMXiXMQ==" />
+
+		
+
+		<!-- import the stylesheet css files -->
+
+    <link rel="stylesheet" media="all" href="/assets/application-d6dcaaf3cf174f8fa3565cdc102c36f0177791f1cd156d68d821cfd6c4d9b578.css" />
+    <link rel="stylesheet" media="all" href="/assets/m_a_shim-59864f5b63d6d822a746f860829f85a242a963140062223a073eb016724fed4b.css" />
+
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="/stylesheets/ie7.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+    <![endif]-->
+
+	<!-- HTML5 Support for IE -->
+	<script type="text/javascript">
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('menu');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+	</script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/prototype/1.6.1.0/prototype.js"></script>
+
+    
+    <script src="//ajax.googleapis.com/ajax/libs/scriptaculous/1.8.2/scriptaculous.js"></script>
+
+    <script src="/assets/application-852a044c401c62371f3623a7bb56a2eaf3a4ab0b4f9109e2f8f383218b61650e.js"></script>
+    <script type="text/javascript">
+    jQuery.noConflict();
+    </script>
+
+ 		<script type="text/javascript" language="javascript" charset="utf-8">
+  		Event.observe(window, 'load', function() {
+        
+        EU.Flash.error("Too many login attempts. Please try again in 10 minutes.")
+      });
+    </script>
+
+    <script type="text/javascript">
+  (function(){
+    var config = {
+      'Trekkie': {
+        'appName': 'opinions'
+      },
+      'Multitrack': {}
+    };
+    var trekkie_version = 1;
+    var analytics = window.analytics = window.analytics || [];
+    if (analytics.initialize) {
+      return;
+    }
+    analytics.methods = [
+      'trackSubmit',
+      'trackClick',
+      'trackLink',
+      'trackForm',
+      'pageview',
+      'identify',
+      'initialize',
+      'group',
+      'track',
+      'ready',
+      'alias',
+      'page',
+      'once',
+      'off',
+      'on'
+    ];
+    analytics.factory = function(method){
+      return function(){
+        var args = Array.prototype.slice.call(arguments);
+        args.unshift(method);
+        analytics.push(args);
+        return analytics;
+      };
+    };
+    for (var i = 0; i < analytics.methods.length; i++) {
+      var key = analytics.methods[i];
+      analytics[key] = analytics.factory(key);
+    }
+    analytics.load = function(config){
+      var script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.async = true;
+      script.src = '//cdn.shopify.com/s/javascripts/trekkie.' + config.Trekkie.appName + '.min.js' + '?v=' + trekkie_version;
+      var first = document.getElementsByTagName('script')[0];
+      first.parentNode.insertBefore(script, first);
+      analytics.initialize(config);
+    };
+    analytics.SNIPPET_VERSION = '3.0.1';
+    analytics.load(config);
+    analytics.page();
+  })();
+</script>
+
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {$(".usercontent a[href]").attr("target", "_blank")});
+    </script>
+	</head>
+
+	<body class="section-accounts">
+
+    <div id="flash">
+      <ul id="flash-errors" style="display:none; overflow:hidden"><li>&nbsp;</li></ul>
+      <ul id="flash-notice" style="display:none; overflow:hidden"><li>&nbsp;</li></ul>
+    </div>
+
+	<!-- Temporary spot for this -->
+<!-- Qualaroo for shopify.com -->
+<script type="text/javascript">var _kiq = _kiq || [];</script>
+<script type="text/javascript" src="//s3.amazonaws.com/ki.js/46764/9p5.js" async="true"></script>
+
+<div class="shb-nav-top">
+  <div class="page-width">
+    <a href="https://www.shopify.com" class="shb-nav-item hide--mobile">Start selling with Shopify</a>
+      <div class="shb-user shb-logged-out">
+        <a href="https://ecommerce.shopify.com/accounts?return_to=%2Flogin">Login</a>
+        <a class="shb-button shb-nav-last-child" href="/accounts/new">Register</a>
+      </div>
+  </div>
+</div>
+
+
+<div id="SiteNavContainer" role="banner">
+  <div class='marketing-nav-wrapper is-moved-by-drawer' role="navigation" aria-label="Main Navigation">
+    <nav class="marketing-nav marketing-nav__primary" id="ShopifyMainNav">
+      <a class="in-page-link skip-to-main visuallyhidden focusable" data-ga-event="Main Nav" data-ga-action="Skip to content" href="#Main">Skip to Content</a>
+
+      <div class="page-width">
+          <button type="button" class="marketing-nav__hamburger js-drawer-open-left"
+            aria-controls="NavDrawer" aria-expanded="false">
+            <span class="visuallyhidden">Mobile Navigation</span>
+          </button>
+
+        <div class="marketing-nav__logo">
+            <a class="icon marketing-nav__logo--full-color" href="/">
+              <span class="visuallyhidden">Home</span>
+</a>        </div>
+
+        <ul class="marketing-nav__items display--desktop">
+              
+<li>
+
+      <a class="marketing-nav__item " href="https://www.shopify.com/guides">Guides</a>
+
+</li>
+
+    
+<li>
+
+      <a class="marketing-nav__item " href="https://www.shopify.com/blog">Blog</a>
+
+</li>
+
+    
+<li>
+
+      <a class="marketing-nav__item " href="/forums">Forums</a>
+
+</li>
+
+    
+<li>
+
+      <a class="marketing-nav__item " href="https://www.shopify.com/success-stories">Stories</a>
+
+</li>
+
+
+        </ul>
+
+        <ul class="marketing-nav__items marketing-nav__user">
+          
+        </ul>
+      </div>
+    </nav>
+
+  </div>
+
+    <div id="NavDrawer" class="drawer drawer--left">
+  <div class="drawer__inner">
+    <div class="drawer__close js-drawer-close">
+      <button class="icon icon-close"><span class="visuallyhidden">Close Menu</span></button>
+    </div>
+
+    <nav role="navigation" aria-label="Main Site Navigation">
+      <ul class="drawer__items drawer__items--primary">
+          
+<li class="nav__item">
+    <a href="https://www.shopify.com/guides">Guides</a>
+</li>
+
+  
+<li class="nav__item">
+    <a href="https://www.shopify.com/blog">Blog</a>
+</li>
+
+  
+<li class="nav__item">
+    <a href="/forums">Forums</a>
+</li>
+
+  
+<li class="nav__item">
+    <a href="https://www.shopify.com/success-stories">Stories</a>
+</li>
+
+
+      </ul>
+    </nav>
+  </div>
+</div>
+
+
+  
+</div>
+
+
+
+  <div id="PageContainer">
+
+	<!-- Begin top-banner -->
+	<section class="top-banner">
+		<div class="page-width">
+			<h1>User Accounts</h1>
+			<h2></h2>
+		</div>
+	</section>
+	<!-- End top-banner -->
+
+	<div class="wrapper clearfix">
+		<div class="row"></div>
+
+
+
+    <div id="content" class="content text-content" style="padding-top: 30px">
+
+
+
+   	    <div id="spinner" style="display:none; overflow:hidden"></div>
+
+	    <div id="main-content" class="page-width">
+	      	
+<style type="text/css">
+#header { display: none }
+</style>
+
+<div class="row-hack">
+<div class="mini-form grid-container">
+
+<div class="grid-item grid-4">
+<h1 id="title" class="p20">University users</h1>
+
+<form class="boxed" action="/login" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="w4C1G9ryCPo8R+6rpl9U2jfqynIHL6KEcU6SOgxXeBxrcwtAYsKr6EZZOrN/51U9ZQnhHnz42yaTC8RSe6X+TQ==" />   
+  <input type="hidden" name="return_to" value="/" />
+
+  <div id="forum_credentials_login">
+	
+    <label for="user_email">Email</label>
+
+    <input tabindex="1" type="text" name="user[email]" id="user_email" />
+
+    <label for="user_password">Password - <a href="/accounts/password_recovery">I don&#39;t have my password</a></label>
+
+    <input tabindex="2" type="password" name="user[password]" id="user_password" />
+    <p  class="forgot-password"></p>
+  </div>
+
+  <div class="clear">
+  <p><input type="checkbox" checked name="remember" id="remember" value="on" style="margin:0; padding:0;" /> <label for="remember" style="margin:0; padding:0;vertical-align:middle">Remember me on this computer</label></p>
+
+  <p class="submit"><input name="submit" type="submit" class="btn-new" value="Login" /></p>
+  </div>
+
+<script type="text/javascript">
+jQuery('#user_email').focus();
+</script>
+</form>
+</div>
+
+
+
+<div class="grid-item grid-4 grid--last">
+	<h1 id="title" class="p20">Shopify users</h1>
+	
+<form class="boxed" action="/auth/shopify" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />   
+  <input type="hidden" name="return_to" value="/" />
+
+  <div id="shopify_auth_login" class="shopify_auth_login">
+
+    <label for="myshopify_domain">Shop Address</label>
+    <input type="text" name="shop" id="myshopify_domain" placeholder="your-shop" class="shopify_auth_login--domain" />.myshopify.com
+
+    <div class="shopify_auth_login--error_msg">Invalid Shop Address</div>
+
+  </div>
+
+  <p><input type="checkbox" checked name="remember" id="remember" value="on" style="margin:0; padding:0;" /> <label for="remember" style="margin:0; padding:0;vertical-align:middle">Remember me on this computer</label></p>
+
+  <p class="submit"><input name="submit" type="submit" class="btn-new" value="Login" /></p>
+</form></div>
+
+
+</div><!-- .login -->
+
+<div class="clear"></div>
+
+<div class="warning-notification minor clear" style="margin: 30px 15px 0">
+<p class="text-center">Don't have an account? <a href="/accounts/new">Register here</a> </p>
+	</div>
+</div>
+
+	    </div>
+    </div>
+
+
+	<div></div>
+
+  </div>
+
+   <footer>
+    <div class="page-width grid-container--thirds">
+      <div class="grid-item grid-item--fluid__third">
+        <h4>Guides</h4>
+        <ul>
+          <li><a href="https://www.shopify.com/guides/dropshipping">Ultimate guide to dropshipping</a></li>
+          <li><a href="https://www.shopify.com/videos/build-a-business-2012
+">Professional advice on building your business</a></li>
+          <li><a href="https://www.shopify.com/videos/ecommerce-seo-101
+">Ecommerce SEO 101</a></li>
+          <li><a href="https://www.shopify.com/guides/businessplan">Guide to business plans</a></li>
+          <li><a href="https://www.shopify.com/guides/make-your-first-ecommerce-sale">50 ways to make<br />your first sale</a></li>
+          <li><a href="https://www.shopify.com/videos/content-marketing
+">Beginner’s guide to<br />content marketing</a></li>
+        </ul>
+      </div>
+      <div class="grid-item grid-item--fluid__third">
+        <h4>Forums</h4>
+        <ul>
+          <li><a href="/c/ecommerce-discussion">Ecommerce discussion</a></li>
+          <li><a href="/c/ecommerce-marketing">Ecommerce marketing</a></li>
+          <li><a href="/c/payments-shipping-fulfilment">Payments, shipping &amp; fulfillment</a></li>
+          <li><a href="/c/wholesale-and-drop-shipping">Wholesale &amp; dropshipping</a></li>
+          <li><a href="/c/accounting-and-taxes">Accounting &amp; taxes</a></li>
+          <li><a href="/c/manufacturing-and-kickstarting">Manufacturing &amp; crowdfunding</a></li>
+          <li><a href="/c/ecommerce-job-board">Ecommerce sites for sale</a></li>
+        </ul>
+      </div>
+      <div class="grid-item grid-item--fluid__third">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="/tools">Ecommerce tools</a></li>
+          <li><a href="https://www.shopify.com/tools/policy-generator">Privacy policy generator</a></li>
+          <li><a href="https://www.shopify.com/tools/policy-generator/refund">Refund policy generator</a></li>
+          <li><a href="https://www.shopify.com/tools/policy-generator/terms-and-conditions">T&amp;C's generator</a></li>
+          <li><a href="https://www.shopify.com/facebook">Sell on facebook</a></li>
+          <li><a href="https://www.shopify.com/pos/retail">Retail store software</a></li>
+          <li><a href="https://www.shopify.com/success-stories">Success stories</a></li>
+        </ul>
+      </div>
+    </div><!-- .page-width -->
+    <div class="copyright page-width">
+      <p>&copy; 2016 <a href="/">Ecommerce University</a> by Shopify &mdash; A shop in minutes, a business for life&trade; &nbsp; <a href="https://www.shopify.com/legal/terms" target="_blank" rel="nofollow">Terms of Service</a> &nbsp; <a href="https://www.shopify.com/legal/privacy" target="_blank" rel="nofollow">Privacy</a>&nbsp; <a href="http://ecommerce.shopify.com/sitemap" target="_blank" rel="nofollow">Sitemap</a></p>
+    </div><!-- .page-width -->
+</footer>
+
+
+ </div><!-- #PageContainer -->
+
+
+
+  	  <div id="dialog-overlay" style="display:none">
+      </div>
+      <div id="dialog-content" style="display:none">
+      </div>
+
+    <script src="/assets/m_a_shim-d293e2789ca10361e096fc9a784c21830c38a5f32ca5810ae85d478380ad717a.js"></script>
+        <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-82702-29']);
+      _gaq.push(["_trackPageview"]);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','_gaUTracker');
+      var gaUTrackerOptions = {};
+      if (analytics && typeof analytics.user !== 'undefined') {
+        gaUTrackerOptions.clientId = analytics.user().traits().uniqToken;
+      }
+      _gaUTracker('create', 'UA-82702-49', gaUTrackerOptions);
+      _gaUTracker('send', 'pageview');
+    </script>
+
+
+      <script type="text/javascript">
+      try {
+      var gwoTracker=_gat._getTracker("UA-6604561-1");
+      gwoTracker._setDomainName(".shopify.com");
+      gwoTracker._trackPageview("/1938273182/test");
+      }catch(err){}
+      </script>
+  	</body>
+  </html>
